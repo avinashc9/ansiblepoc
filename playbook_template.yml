@@ -11,13 +11,13 @@
      - debug: var=fortinet_password
 
 
-#     - name: 
-#       fortios_config:
-#         host: 10.52.29.7
-#         username: "{{ fortinet_username }}"
-#         password: "{{ fortinet_password }}"
-#         src: forti.j2 
-#
+     - name: 
+       fortios_config:
+         host: 10.52.29.7
+         username: "{{ fortinet_username }}"
+         password: "{{ fortinet_password }}"
+         src: forti.j2 
+
 #     - name: Add interfaces to VLAN
 #       ios_vlan:
 #         vlan_id: "{{ vlan }}"
