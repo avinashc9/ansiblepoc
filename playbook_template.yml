@@ -1,0 +1,38 @@
+---
+- hosts: all
+  gather_facts: no
+
+
+
+
+  tasks:
+
+     - debug: var=fortios_username
+     - debug: var=fortios_password
+
+
+     - name: 
+       fortios_config:
+         host: 10.52.29.7
+         username: "{{ fortios_username }}"
+         password: "{{ fortios_password }}"
+         src: fortinet.j2 
+#
+#     - name: Add interfaces to VLAN
+#       ios_vlan:
+#         vlan_id: "{{ vlan }}"
+#         interfaces:
+#           - "{{ interface }}"
+##           
+#     - name: Verify VLAN
+#       ios_command:
+#         commands: 
+#           - show run int {{ interface }}          
+#       register: int
+#
+#     - debug: var=int.stdout_lines  
+                  
+         
+
+         
+
