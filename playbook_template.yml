@@ -7,15 +7,15 @@
 
   tasks:
 
-     - debug: var=fortios_username
-     - debug: var=fortios_password
+     - debug: var=fortinet_username
+     - debug: var=fortinet_password
 
 
      - name: 
        fortios_config:
          host: 10.52.29.7
-         username: "{{ fortios_username }}"
-         password: "{{ fortios_password }}"
+         username: "{{ fortinet_username }}"
+         password: "{{ fortinet_password }}"
          src: forti.j2 
 #
 #     - name: Add interfaces to VLAN
