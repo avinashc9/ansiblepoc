@@ -21,7 +21,7 @@
          host: "{{inventory_hostname}}"
          username: "{{ Fortimgr_user }}"
          password: "{{ Fortimgr_pass }}"
-         adom: "Stations"
+         adom: "root"
          script_name: "TestScript"
          script_type: "cli"
          script_target: "remote_device"
