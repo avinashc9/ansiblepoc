@@ -24,5 +24,6 @@
          script_target: "remote_device"
          script_description: "Create by Ansible"
          script_content: "get system status"
+         state: "present"
 
 
