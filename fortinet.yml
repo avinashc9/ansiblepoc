@@ -9,6 +9,7 @@
 
      - debug: var=Fortimgr_user
      - debug: var=Fortimgr_pass
+
      - name: QUERY FORTIGATE DEVICE BY IP
        fmgr_query:
          host: "{{inventory_hostname}}"
