@@ -11,7 +11,7 @@
          username: "{{ Fortimgr_user }}"
          password: "{{ Fortimgr_pass }}"
          adom: "Stations"
-         device_ip: 10.52.29.7
+         device_ip: "10.52.29.7"
          object: "device"
 
 
