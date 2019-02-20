@@ -1,13 +1,10 @@
 ---
-- hosts: all
+- hosts: ios
   gather_facts: no
   connection: local
 
 
-
   tasks:
-
-
      - name: QUERY FORTIGATE DEVICE BY IP
        fmgr_query:
          host: "{{inventory_hostname}}"
@@ -16,6 +13,10 @@
          adom: "Stations"
          device_ip: 10.52.29.7
          object: "device"
+
+
+
+
 
          
 
