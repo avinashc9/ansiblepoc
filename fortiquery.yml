@@ -4,7 +4,7 @@
   connection: local
 
 
-  tasks:
+ tasks:
   
   - name: Foo
     fmgr_query:
