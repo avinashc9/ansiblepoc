@@ -5,6 +5,7 @@
 
 
   tasks:
+  
   - name: Foo
     fmgr_query:
       host: "{{inventory_hostname}}"
