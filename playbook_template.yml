@@ -1,7 +1,7 @@
 ---
 - hosts: all
   gather_facts: no
-
+  connection: local
 
 
 
@@ -13,10 +13,12 @@
 
      - name: 
        fortios_config:
-         #host: 10.52.29.7
-         username: "{{fortinet_username}}"
-         password: "{{fortinet_password}}"
-         src: forti.j2 
+         host: 10.52.29.7
+         username: etomb
+        #  password: zaq12wsx
+        #  backup: yes
+        # src: forti.j2 
+        # file_mode: yes
 
 #     - name: Add interfaces to VLAN
 #       ios_vlan:
