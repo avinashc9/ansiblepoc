@@ -6,13 +6,13 @@
 
   tasks:
   
-  - name: Foo
-    fmgr_query:
-      host: "{{inventory_hostname}}"
-      username: "{{ Fortimgr_user }}"
-      password: "{{ Fortimgr_pass }}"
-      adom: "Stations"
-      device_ip: "10.52.29.7"
+   - name: Foo
+     fmgr_query:
+       host: "{{inventory_hostname}}"
+       username: "{{ Fortimgr_user }}"
+       password: "{{ Fortimgr_pass }}"
+       adom: "Stations"
+       device_ip: "10.52.29.7"
 
 
 
