@@ -20,6 +20,6 @@
          password: "{{ Fortimgr_pass }}"
          method: POST
          force_basic_auth: yes
-         valid_certs: no
+         validate_certs: no
 
 
