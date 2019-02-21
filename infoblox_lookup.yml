@@ -2,7 +2,8 @@
 - hosts: all
   gather_facts: no
   connection: local
-
+  environment:
+    PYTHONHTTPSVERIFY: 0
 
 
   tasks:
