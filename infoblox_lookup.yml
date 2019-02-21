@@ -1,0 +1,17 @@
+---
+- hosts: all
+  gather_facts: no
+  connection: local
+
+
+
+  tasks:
+
+
+     
+     
+     
+     - name: return next available IP address for network 192.168.10.0/24
+       set_fact:
+       ipaddr: "{{ lookup('nios_next_ip', '192.168.10.0/24', provider={'host': "{{ nios_host }}", 'username': "{{ nios_username }}", 'password': "{{ nios_password}}" }) }}"
+
